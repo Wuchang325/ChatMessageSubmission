@@ -1,4 +1,4 @@
-package com.wuchang325.cms;
+package io.github.wuchang325;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
