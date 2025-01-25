@@ -1,6 +1,0 @@
-name: ChatMessageSubmission
-version: 1.0
-main: com.wuchang325.cms.ChatMessageSubmission
-api-version: 1.13
-description: 玩家消息监听并提交到指定URL的插件
-author: Wuchang325
