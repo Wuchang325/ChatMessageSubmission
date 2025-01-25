@@ -1,0 +1,14 @@
+ChatMessageSubmission/
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── wuchang325/
+│                   └── cms/
+│                       └── ChatMessageSubmission.java
+├── build.gradle
+├── settings.gradle
+├── plugin.yml
+├── gradlew
+├── gradlew.bat
+└── README.md
