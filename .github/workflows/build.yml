@@ -23,12 +23,9 @@ jobs:
           java-version: '17'
 
       - name: Set up Gradle
-        uses: actions/setup-gradle@v4
+        uses: actions/setup-gradle@v4  # 确保版本号正确
         with:
           gradle-version: '8.3'  # 指定你需要的 Gradle 版本
-
-      - name: Grant execute permission for gradlew (if necessary)
-        run: echo "Gradle Wrapper is not used."
 
       - name: Build with Gradle
         run: gradle build
