@@ -54,7 +54,7 @@ public class ChatMessageSubmission extends JavaPlugin implements Listener {
                     
                     // 写入默认配置
                     String defaultConfig = 
-                        "target-url: \"http://your-target-url.com/submit\"\n";
+                        "webhook-url: \"http://your-target-url.com/submit\"\n";
                     java.nio.file.Files.write(configFile.toPath(), defaultConfig.getBytes());
                 } else {
                     getLogger().severe("无法创建 config.yml 文件。");
@@ -73,9 +73,9 @@ public class ChatMessageSubmission extends JavaPlugin implements Listener {
         reloadConfig(); // 重新加载配置以确保最新
 
         // 读取配置项
-        targetUrl = getConfig().getString("target-url");
+        targetUrl = getConfig().getString("webhook-url");
         if (targetUrl == null || targetUrl.isEmpty()) {
-            getLogger().severe("配置文件中缺少 'target-url' 或其值为空。请在 config.yml 中正确配置。");
+            getLogger().severe("配置文件中缺少 'webhook-url' 或其值为空。请在 config.yml 中正确配置。");
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
