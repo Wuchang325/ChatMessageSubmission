@@ -1,0 +1,6 @@
+name: ChatMessageSubmission
+version: 1.0.0
+main: io.github.wuchang325.ChatMessageSubmission
+api-version: 1.20
+description: 提交玩家聊天信息到 HTTP 服务器
+author: Wuchang325
